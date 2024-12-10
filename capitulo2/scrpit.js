@@ -173,10 +173,12 @@
 // validarCliente(3);
 
 //Problema 2
+
+
 let cantidad = prompt("¿Cuantos alumnos son?");
 let alumnosTotales = [];
 for (i = 0; i < cantidad; i++) {
-  alumnosTotales[i] = [prompt("Nombre del alumno" + (i+1)),0]
+  alumnosTotales[i] = [prompt("Nombre del alumno" + (i+1)),0];
 }
 const tomarAsistencia = (nombre,p)=>{
   let presencia = prompt(nombre);
@@ -192,10 +194,11 @@ for (i = 0; i < 30; i++){
 for (alumno in alumnosTotales) {
     let resultado = `${alumnosTotales[alumno][0]}:<br>
     --------Presentes: ${alumnosTotales[alumno][1]} <br>
-    --------Ausente: ${alumnosTotales[alumno[1]]}`;
+    --------Ausente: ${30 - alumnosTotales[alumno[1]]}`;
     if (30 - alumnosTotales[1] > 18) {
     resultado+= "Reprobado por inasistencias"
     } else {
       resultado+= "<br><br>"
     }
+    document.write(resultado);
 }
