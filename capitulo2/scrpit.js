@@ -193,12 +193,12 @@ for (i = 0; i < 30; i++){
 }
 for (alumno in alumnosTotales) {
     let resultado = `${alumnosTotales[alumno][0]}:<br>
-    --------Presentes: ${alumnosTotales[alumno][1]} <br>
-    --------Ausente: ${30 - alumnosTotales[alumno[1]]}`;
-    if (30 - alumnosTotales[1] > 18) {
+    --------Presentes:<b> ${alumnosTotales[alumno][1]} </b><br>
+    --------Ausente: <b>${30 - alumnosTotales[alumno][1]}</b>`;
+    if (30 - alumnosTotales[alumno][1] > 18) {
     resultado+= "Reprobado por inasistencias"
     } else {
       resultado+= "<br><br>"
     }
     document.write(resultado);
-}
+};
